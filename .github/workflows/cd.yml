@@ -17,7 +17,7 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v3
         with:
-          repository: ${GITHUB_REPOSITORY}
+          repository: $env:GITHUB_REPOSITORY
           token: ${{secrets.PAT}}
       - name: Create folder
         uses: appleboy/ssh-action@v0.1.10
