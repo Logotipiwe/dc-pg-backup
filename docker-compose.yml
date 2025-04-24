@@ -1,5 +1,6 @@
 services:
   pg_backup_bot:
+    container_name: bg_backup_bot
     build: .
     environment:
       - PG_HOST=${PG_HOST}
