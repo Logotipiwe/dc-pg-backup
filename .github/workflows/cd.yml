@@ -53,9 +53,9 @@ jobs:
             export PG_HOST=pg
             export PG_PORT=5432
             export PG_USER=postgres
-            export PG_PASS=${DB_PASS}
-            export TG_BOT_TOKEN=${PG_BACKUP_TG_BOT_TOKEN}
-            export TG_CHAT_ID=${TG_OWNER_ID}
+            export PG_PASS=${{env.DB_PASS}}
+            export TG_BOT_TOKEN=${{env.PG_BACKUP_TG_BOT_TOKEN}}
+            export TG_CHAT_ID=${{env.TG_OWNER_ID}}
             
             cd /kuber/dc-pg-backup/
             
