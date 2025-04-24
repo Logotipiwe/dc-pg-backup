@@ -11,8 +11,6 @@ services:
       - TG_CHAT_ID=${TG_CHAT_ID}
     networks:
       - dc-net
-    env_file:
-      - .env
 
 networks:
   dc-net:
